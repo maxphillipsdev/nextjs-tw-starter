@@ -99,12 +99,12 @@ const config: PlaywrightTestConfig = {
 
   /* Run your local dev server before starting the tests when not in CI */
   webServer:
-    process.env.CI !== "true"
-      ? {
+    process.env.CI === "true"
+      ? undefined
+      : {
           command: "yarn dev",
           port: 3000,
-        }
-      : undefined,
+        },
 };
 
 export default config;

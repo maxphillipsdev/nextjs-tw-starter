@@ -8,13 +8,6 @@ module.exports = {
     fontFamily: {
       sans: ["Inter", "sans-serif"],
     },
-    extend: {
-      colors: {
-        dark: "#1F2937",
-        light: "#F9FAFB",
-        accent: "#D1E5FF",
-      },
-    },
   },
   plugins: [
     // Typography
